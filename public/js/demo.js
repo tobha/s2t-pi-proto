@@ -305,5 +305,6 @@ function showVizualization(theProfile) {
 
   onSampleTextChange();
   $content.keyup(updateWordsCount);
+  $content.change(updateWordsCount);
   $('.sample-radio').change(onSampleTextChange);
 });

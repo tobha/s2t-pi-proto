@@ -1,16 +1,22 @@
 
 'use strict';
 
+
 var Microphone = require('../Microphone');
 var handleMicrophone = require('../handlemicrophone').handleMicrophone;
 var showError = require('./showerror').showError;
 var showNotice = require('./showerror').showNotice;
+
 
 exports.initRecordButton = function(ctx) {
 
   var recordButton = $('#recordButton');
 
   recordButton.click((function() {
+$(document).ready(function() {
+
+ $content.change(updateWordsCount);
+});
 
     var running = false;
     var token = ctx.token;
